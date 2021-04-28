@@ -38,7 +38,6 @@ export SUCCESS ERROR SRPMPROC PATH
 #
 # ---------------------------- VARIABLE DECLARATION ---------------------------
 #
-# WHAT: enable oracle tracing.
 #
 exit_code=${SUCCESS}
 err_msg=""
@@ -47,7 +46,7 @@ ARCH=`uname -m`
 # **************************** MAIN SCRIPT ************************************
 #
 
-# WHAT: Verify logged in as root
+# WHAT: Verify this script is running as root user.
 # WHY:  Must be logged in as root user (in case of manual operation).
 #
 #if [ ${exit_code} -eq ${SUCCESS} ]; then
